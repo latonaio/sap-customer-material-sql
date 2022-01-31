@@ -1,4 +1,4 @@
-CREATE TABLE `sap_customer_material`
+CREATE TABLE `sap_customer_material_data`
 (
   `Customer`                          varchar(10) NOT NULL,
   `SalesOrganization`                 varchar(4) NOT NULL,
@@ -19,6 +19,6 @@ CREATE TABLE `sap_customer_material`
   `SalesUnit`                         varchar(3) DEFAULT NULL,
   `SalesQtyToBaseQtyDnmntr`           varchar(6) DEFAULT NULL,
   `SalesQtyToBaseQtyNmrtr`            varchar(6) DEFAULT NULL,
-    PRIMARY KEY (`Customer`, `SalesOrganization`, `DistributionChannel`, `Material`),
+    PRIMARY KEY (`Customer`, `SalesOrganization`, `DistributionChannel`, `Material`)
 ) ENGINE = InnoDB
   DEFAULT CHARSET = utf8mb4;
